@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Gym/FilePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/customers.txt" afterDir="false" />
+    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="New pathfile">
+      <change afterPath="$PROJECT_DIR$/Test/Gym/LocalDateNowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/ReadDateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/ReadFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/customers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/MainProgTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +67,16 @@
       <option name="presentableId" value="Default" />
       <updated>1665750074219</updated>
       <workItem from="1665750076058" duration="152000" />
-      <workItem from="1665750490097" duration="944000" />
+      <workItem from="1665750490097" duration="965000" />
+      <workItem from="1665758410147" duration="1293000" />
     </task>
+    <task id="LOCAL−00001" summary="New pathfile">
+      <created>1665751458407</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1665751458407</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New pathfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="New pathfile" />
   </component>
 </project>
