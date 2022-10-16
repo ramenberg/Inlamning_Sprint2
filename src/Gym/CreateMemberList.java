@@ -8,8 +8,10 @@ import java.util.List;
 
 public class CreateMemberList extends Person {
 
-    public List<Person> getAllMembers() {
-        return new ArrayList<>(makeMemberList());
+    public void getAllMembers() {
+        List<Person> allMembers = makeMemberList();
+        for (Person p : allMembers)
+            System.out.println(p);
     }
 
     public List<Person> makeMemberList() {

@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="new File">
-      <change afterPath="$PROJECT_DIR$/src/Gym/DateCompare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/DateCompareTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/SearchMemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gym/SearchMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Gym/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/DateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/CreateMemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/CreateMemberList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/DateCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/DateCompare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MainProg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MainProg.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +76,7 @@
       <workItem from="1665750076058" duration="152000" />
       <workItem from="1665750490097" duration="965000" />
       <workItem from="1665758410147" duration="1349000" />
-      <workItem from="1665916304253" duration="10191000" />
+      <workItem from="1665916304253" duration="15079000" />
     </task>
     <task id="LOCAL−00001" summary="New pathfile">
       <created>1665751458407</created>
@@ -104,7 +108,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1665925319983</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="new File">
+      <created>1665936741004</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1665936741004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
