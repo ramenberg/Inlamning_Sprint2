@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="New pathfile">
-      <change afterPath="$PROJECT_DIR$/Test/Gym/LocalDateNowTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Gym/ReadDateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Gym/ReadFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Gym/customers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/MainProgTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="New tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,21 +29,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Confirmation&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Gym" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
@@ -68,7 +65,8 @@
       <updated>1665750074219</updated>
       <workItem from="1665750076058" duration="152000" />
       <workItem from="1665750490097" duration="965000" />
-      <workItem from="1665758410147" duration="1293000" />
+      <workItem from="1665758410147" duration="1349000" />
+      <workItem from="1665916304253" duration="8135000" />
     </task>
     <task id="LOCAL−00001" summary="New pathfile">
       <created>1665751458407</created>
@@ -76,7 +74,19 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1665751458407</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="New tests">
+      <created>1665759761382</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1665759761382</updated>
+    </task>
+    <task id="LOCAL−00003" summary="New tests">
+      <created>1665924821836</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1665924821836</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New pathfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="New pathfile" />
+    <MESSAGE value="New tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="New tests" />
   </component>
 </project>

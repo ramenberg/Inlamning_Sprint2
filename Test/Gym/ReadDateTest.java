@@ -1,6 +1,7 @@
 package Gym;
 
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Date;
 
@@ -8,11 +9,15 @@ public class ReadDateTest {
 
     ReadDate rd = new ReadDate();
 
-
-    Date d1 = sdf.parse("2022-10-14");
-    Date d2 = sdf.parse("2021-10-15");
-    Date d3 = sdf.parse("2021-10-14");
-    Date d4 = sdf.parse("2021-10-13");
-
-    assertTrue(rd.dateReader(d1, d2))
+//    public boolean checkIfMembershipIsValid() {
+//
+//        LocalDate date1 = LocalDate.of(2021, 04, 10);
+//        System.out.println("\ndate1: " + date1);
+//        if (date1.isBefore(currentDateMinus12Months)) {
+//            System.out.println("Medlemskapet är inte längre aktivt.");
+//        }
+//        else
+//            System.out.println("Medlemskapet är aktivt.");
+//
+//    }
 }
