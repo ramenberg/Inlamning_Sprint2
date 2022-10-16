@@ -4,16 +4,33 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 public class DateTest {
 
+//    dateCompare dc = new dateCompare();
     Date dt = new Date();
 
-    String today = "2022-10-16";
 
+    @Test
+    public void DateTest() {
+        String date = dt.getCurrentDate().toString();
+        String testdate1 = "2022-10-16";
+        String testdate2 = "2021-10-16";
+        String testdate3 = "2022-01-01";
+
+        assertEquals(date, testdate1);
+        assertNotEquals(date, testdate2);
+        assertNotEquals(date, testdate3);
+    }
 //    @Test
-//    public void LocalDateTest() {
+//    public void DateCompareTest() {
 //
-//        assert(dt.today > date1);
+//    String todayDate = "2022-10-16";
+//    String testDate1 = "2022-10-16";
+//    String testDate2 = "2022-10-15";
+//    String testDate3 = "2021-10-16";
+//        assert(dt.todayDate > date1);
 //        assert(dt.today != date 2)
 //
 //        //Today
