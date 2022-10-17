@@ -1,19 +1,17 @@
 package Gym;
 
-import javax.naming.Name;
-import java.util.ArrayList;
 import java.util.List;
 
-public class SearchMember extends CreateMemberList {
+public class SearchMember {
 
-    public SearchMember() {
-        // ange personnummer eller namn för att söka efter medlem - lägg i whilesats för att kunna avsluta
-        List<Person> lista = makeMemberList();
-        System.out.println(lista.get(0));
-        System.out.println(lista.get(1));
-        String input = "8512021234";
-        int index = 0;
-        Person memberFound = null;
+//    public SearchMember() {
+//        // ange personnummer eller namn för att söka efter medlem - lägg i whilesats för att kunna avsluta
+//        List<Member> lista = memberList();
+//        System.out.println(lista.get(0));
+//        System.out.println(lista.get(1));
+//        String input = "8512021234";
+//        int index = 0;
+//        Member memberFound = null;
 
 
 //        for (Person p : lista(0); {
@@ -35,4 +33,4 @@ public class SearchMember extends CreateMemberList {
         //sök först bland personnummer, sedan bland namn, ignorecase.
         // om funnen: spara index i listan
 
-}
+//}

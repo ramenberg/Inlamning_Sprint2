@@ -6,32 +6,29 @@ import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CreateMemberList extends Person {
+public class CreateMemberList extends Member {
 
-    public void getAllMembers() {
-        List<Person> allMembers = makeMemberList();
-        for (Person p : allMembers)
-            System.out.println(p);
+    public CreateMemberList(String personalIdNumber, String name, String lastPaymentDate, String lastVisitDate) {
+        super(personalIdNumber, name, lastPaymentDate, lastVisitDate);
     }
 
-    public List<Person> makeMemberList() {
-        final Path filePath = Paths.get("src/Gym/customers.txt");
-        String firstRow;
-        String[] splitter;
-        List<Person> memberList = new ArrayList<>();
-
-        try(BufferedReader buf = Files.newBufferedReader(filePath)) {
-            while((firstRow = buf.readLine()) != null) {
-                Person person = new Person();
-                memberList.add(person);
-                splitter = firstRow.split(",");
-                person.setPersonalIdNumber(splitter[0].trim());
-                person.setName(splitter[1].trim());
-                person.setLastPaymentDate(buf.readLine().trim());
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return memberList;
-    }
+//    public List<Member> makeMemberList() {
+//        String firstRow;
+//        String[] splitter;
+//        List<Member> memberList = new ArrayList<>();
+//
+//        try(BufferedReader buf = Files.newBufferedReader(filePath)) {
+//            while((firstRow = buf.readLine()) != null) {
+//                Member member = new Member();
+//                memberList.add(member);
+//                splitter = firstRow.split(",");
+//                member.setPersonalIdNumber(splitter[0].trim());
+//                member.setName(splitter[1].trim());
+//                member.setLastPaymentDate(buf.readLine().trim());
+//            }
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+//        return memberList;
+//    }
 }

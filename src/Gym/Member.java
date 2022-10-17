@@ -1,19 +1,18 @@
 package Gym;
 
-public class Person {
+public class Member {
     protected String personalIdNumber;
     protected String name;
     protected String lastPaymentDate;
+    protected String lastVisitDate;
 
-    public Person(String lastVisitDate) {
-        this.lastVisitDate = lastVisitDate;
+
+    public Member(String personalIdNumber, String name, String lastPaymentDate) {
+        this.personalIdNumber = personalIdNumber;
+        this.name = name;
+        this.lastPaymentDate = lastPaymentDate;
     }
 
-    String lastVisitDate;
-
-    public Person() {
-
-    }
 
     public String getPersonalIdNumber() {
         return personalIdNumber;
@@ -38,9 +37,12 @@ public class Person {
     public void setLastPaymentDate(String lastPaymentDate) {
         this.lastPaymentDate = lastPaymentDate;
     }
-    @Override
-    public String toString() {
-        return "Medlem: [Namn: " + name + ", Personnummer: " + personalIdNumber +
-                ", Senaste betalningsdag: " + lastPaymentDate + "]";
+
+    public String getLastVisitDate() {
+        return lastVisitDate;
+    }
+
+    public void setLastVisitDate(String lastVisitDate) {
+        this.lastVisitDate = lastVisitDate;
     }
 }
