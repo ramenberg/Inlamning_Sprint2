@@ -2,20 +2,25 @@ package Gym;
 
 import org.junit.jupiter.api.Test;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CreateMemberListTest {
+public class MemberListTest {
 
+    final Path filePath = Paths.get("src/Gym/customers.txt");
+    final Path visitsFilePath = Paths.get("src/Gym/memberVisitDates.txt");
+
+
+    List<Member> testList = new ArrayList<>();
+    MemberList ml = new MemberList();
+
+//    ml.createMemberList();
     @Test
-    public void getAllMembers_whenMembersFileFound_shouldReturnListOfAllMembers() {
-        //arrange
-        var CreateMemberList = new CreateMemberList();
-
-        //act
-        List<Member> testList = CreateMemberList.getAllMembers();
-
+    public void createMemberListTest() {
         //assert
         assertEquals(testList.size(), 14);
         Member p1 = testList.get(0);

@@ -1,18 +1,49 @@
 package Gym;
 
+import java.time.LocalDate;
+import java.util.Collections;
+import java.util.List;
+
 public class Member {
     protected String personalIdNumber;
     protected String name;
-    protected String lastPaymentDate;
-    protected String lastVisitDate;
+    protected LocalDate lastPaymentDate;
 
 
-    public Member(String personalIdNumber, String name, String lastPaymentDate) {
+    protected Boolean activeMember;
+
+    protected List<LocalDate> lastVisitDate;
+
+
+    public Member(String personalIdNumber, String name, LocalDate lastPaymentDate, Boolean activeMember) {
         this.personalIdNumber = personalIdNumber;
         this.name = name;
         this.lastPaymentDate = lastPaymentDate;
+        this.activeMember = activeMember;
+    }
+    public Member(String personalIdNumber, String name, LocalDate lastPaymentDate, Boolean activeMember,
+                  List<LocalDate> lastVisitDate) {
+        this.personalIdNumber = personalIdNumber;
+        this.name = name;
+        this.lastPaymentDate = lastPaymentDate;
+        this.activeMember = activeMember;
+        this.lastVisitDate = lastVisitDate;
     }
 
+    @Override
+    public String toString() {
+        return "Namn: " + getName() +
+                "\nPersonnummer: " + getPersonalIdNumber() +
+                "\nSenaste betalningsdag: " + getLastPaymentDate() +
+                "\nAktiv medlem: " + getActiveMember() +"\n";
+    }
+
+    public Boolean getActiveMember() {
+        return activeMember;
+    }
+    public void setActiveMember(Boolean activeMember) {
+        this.activeMember = activeMember;
+    }
 
     public String getPersonalIdNumber() {
         return personalIdNumber;
@@ -30,19 +61,18 @@ public class Member {
         this.name = name;
     }
 
-    public String getLastPaymentDate() {
+    public LocalDate getLastPaymentDate() {
         return lastPaymentDate;
     }
 
-    public void setLastPaymentDate(String lastPaymentDate) {
+    public void setLastPaymentDate(LocalDate lastPaymentDate) {
         this.lastPaymentDate = lastPaymentDate;
     }
-
-    public String getLastVisitDate() {
+    public List<LocalDate> getLastVisitDate() {
         return lastVisitDate;
     }
 
-    public void setLastVisitDate(String lastVisitDate) {
-        this.lastVisitDate = lastVisitDate;
+    public void setLastVisitDate(LocalDate lastVisitDate) {
+        this.lastVisitDate = Collections.singletonList(lastVisitDate);
     }
 }
