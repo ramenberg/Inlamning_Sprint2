@@ -1,14 +1,20 @@
 package Gym;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Date {
     static LocalDate currentDate = LocalDate.now();
-    LocalDate currentDateMinus12Months = currentDate.minusMonths(12);
+    static LocalDate currentDateMinusOneYear = currentDate.minusYears(1);
+
+    static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
     public static LocalDate getCurrentDate() {
         return currentDate;
     }
-    public LocalDate getCurrentDateMinus12Months() {
-        return currentDateMinus12Months;
+    public static LocalDate getCurrentDateMinusOneYear() {
+        return currentDateMinusOneYear;
     }
 }

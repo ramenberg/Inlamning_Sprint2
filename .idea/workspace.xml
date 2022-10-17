@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="new File">
-      <change afterPath="$PROJECT_DIR$/src/Gym/MemberList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/MemberVisit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/memberVisitDates.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gym/memberVisits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/CreateMemberListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/CreateMemberListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/CreateMemberListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/MemberListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/DateCompareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/DateCompareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/CreateMemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/CreateMemberList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/DateCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/DateCompare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/FilePath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MainProg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MainProg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/SearchMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/SearchMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/MemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MemberList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/MemberVisit.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,7 +81,7 @@
       <workItem from="1665750490097" duration="965000" />
       <workItem from="1665758410147" duration="1349000" />
       <workItem from="1665916304253" duration="15089000" />
-      <workItem from="1665997106414" duration="5431000" />
+      <workItem from="1665997106414" duration="12778000" />
     </task>
     <task id="LOCAL−00001" summary="New pathfile">
       <created>1665751458407</created>
@@ -123,7 +125,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1665941582661</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="new File">
+      <created>1666002722962</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1666002722962</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
