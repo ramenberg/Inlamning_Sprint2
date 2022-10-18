@@ -1,22 +1,27 @@
 package Gym;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.sql.Array;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class MemberList {
     protected List<Member> memberList = new ArrayList<>();
+    protected int memberFoundIndex = 0;
+
+    public int getMemberFoundIndex() {
+        return memberFoundIndex;
+    }
+    public void setMemberFoundIndex(int memberFoundIndex) {
+        this.memberFoundIndex = memberFoundIndex;
+    }
 
     protected void addMember(Member member) {
         memberList.add(member);
     }
+
     public List<Member> createMemberList() {
         String firstRow;
         String[] splitter;
@@ -24,8 +29,8 @@ public class MemberList {
         LocalDate paymentDate;
         boolean membershipValidation;
 
-        try(BufferedReader buf = Files.newBufferedReader(FilePath.filePath)) {
-            while((firstRow = buf.readLine()) != null) {
+        try (BufferedReader buf = Files.newBufferedReader(FilePath.filePath)) {
+            while ((firstRow = buf.readLine()) != null) {
                 splitter = firstRow.split(",");
                 pNr = (splitter[0].trim());
                 name = (splitter[1].trim());
@@ -39,26 +44,28 @@ public class MemberList {
         }
         return memberList;
     }
+
     public boolean validateMembership(LocalDate paymentDate) {
         boolean membershipValid;
-        if(paymentDate.isAfter(Date.getCurrentDateMinusOneYear())) {
-            membershipValid = true;
-        } else
-            membershipValid = false;
+        membershipValid = paymentDate.isAfter(Date.getCurrentDateMinusOneYear());
         return membershipValid;
     }
-    protected void searchMemberbyNameOrPersonalIdNumber(String input) {
-        for(Member member : memberList)
-            if (member.getName().equalsIgnoreCase(input) || (member.getPersonalIdNumber().equalsIgnoreCase(input))) {
-                System.out.println("Information om " + input + ":");
-                System.out.println(member);
-            } else
-                System.out.println("Personen hittades ej i medlemsregistret. Du skrev: " +input);
+
+    public Member getMemberInList(int i) {
+        return memberList.get(i);
     }
 
-    protected void showAllMemberList() {
-        for(Member member : memberList) {
-            System.out.println(member);
-        }
+    public boolean searchMemberbyNameOrPersonalIdNumber(String input) {
+        while (!memberList.isEmpty()) {
+            for (Member member : memberList)
+                if (member.getName().equalsIgnoreCase(input) || (member.getPersonalIdNumber().equals(input))) {
+                    System.out.println("Information om \"" + input + "\":");
+                    member.toString();
+                    setMemberFoundIndex(memberList.indexOf(member));
+                    return true;
+                }
+        } System.out.println("Personen hittades ej i medlemsregistret. Du skrev: " + input);
+        return false;
     }
 }
+

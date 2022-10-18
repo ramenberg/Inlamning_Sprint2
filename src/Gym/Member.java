@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 
-public class Member {
+public class Member implements MemberVisitsInterface {
     protected String personalIdNumber;
     protected String name;
     protected LocalDate lastPaymentDate;
@@ -12,7 +12,7 @@ public class Member {
 
     protected Boolean activeMember;
 
-    protected List<LocalDate> lastVisitDate;
+    protected LocalDate lastVisitDate;
 
 
     public Member(String personalIdNumber, String name, LocalDate lastPaymentDate, Boolean activeMember) {
@@ -21,12 +21,9 @@ public class Member {
         this.lastPaymentDate = lastPaymentDate;
         this.activeMember = activeMember;
     }
-    public Member(String personalIdNumber, String name, LocalDate lastPaymentDate, Boolean activeMember,
-                  List<LocalDate> lastVisitDate) {
+    public Member(String personalIdNumber, String name, LocalDate lastVisitDate) {
         this.personalIdNumber = personalIdNumber;
         this.name = name;
-        this.lastPaymentDate = lastPaymentDate;
-        this.activeMember = activeMember;
         this.lastVisitDate = lastVisitDate;
     }
 
@@ -36,6 +33,11 @@ public class Member {
                 "\nPersonnummer: " + getPersonalIdNumber() +
                 "\nSenaste betalningsdag: " + getLastPaymentDate() +
                 "\nAktiv medlem: " + getActiveMember() +"\n";
+    }
+    @Override
+    public String toStringVisits() {
+        return getName() + ", " + getPersonalIdNumber() +
+                "\n" + getLastVisitDate();
     }
 
     public Boolean getActiveMember() {
@@ -69,10 +71,11 @@ public class Member {
         this.lastPaymentDate = lastPaymentDate;
     }
     public List<LocalDate> getLastVisitDate() {
-        return lastVisitDate;
+        return Collections.singletonList(lastVisitDate);
     }
 
     public void setLastVisitDate(LocalDate lastVisitDate) {
-        this.lastVisitDate = Collections.singletonList(lastVisitDate);
+        this.lastVisitDate = lastVisitDate;
     }
+
 }
