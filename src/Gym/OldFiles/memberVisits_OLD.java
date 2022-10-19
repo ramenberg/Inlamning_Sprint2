@@ -1,4 +1,7 @@
-package Gym;
+package Gym.OldFiles;
+
+import Gym.Member;
+import Gym.MemberList;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

@@ -18,25 +18,66 @@ public class MainProg {
     public static void main(String[] args) {
 
         MemberList ml = new MemberList();
+        ml.createMemberList();
         MemberVisits mv = new MemberVisits();
         String memberInputData, memberInputRegister;
         Scanner input = new Scanner(System.in);
-        while (true) {
+//        for (Member m : list)
+//            if(m.activeMember)
+//                mv.addMemberVisit(m);
+
+        while(true) {
             System.out.print("Ange namn (förnamn efternamn)" +
                     " eller personnummer (10 siffror) för att söka efter medlem.\nSkriv exit för att avsluta. ");
-            while(input.hasNext()) {
-                memberInputData = input.nextLine();
-                boolean memberSearch = ml.searchMemberbyNameOrPersonalIdNumber(memberInputData);
-                if(!memberSearch) {
-                    break;
-                } else {
-                    System.out.print("Registrera besök för aktuell medlem? (Ja/Nej) ");
-                    memberInputRegister = input.nextLine();
-                    if(memberInputRegister.equalsIgnoreCase("ja")) {
-                        mv.addMemberVisit(ml.getMemberInList(0));
+            while(true) {
+                memberInputData = input.nextLine().trim();
+                if(memberInputData.equalsIgnoreCase("exit"))
+                    System.exit(1);
+                else {
+                    boolean memberFound = ml.searchMemberbyNameOrPersonalIdNumber(memberInputData);
+                    if(!memberFound) {
+                        System.out.println("Personen hittades ej i registret.");
+                        break;
+                    } else {
+                        Member found = ml.getFoundMember();
+                        if (found.getActiveMember()) {
+                            System.out.print("Vill du registrera besök för aktuell person? (ja/nej) ");
+                            memberInputRegister = input.nextLine().trim();
+                            if (memberInputRegister.equalsIgnoreCase("nej")) {
+                            }
+                            else {
+                                mv.addMemberVisit(found);
+                                System.out.println("Besöket för " + found.getName() +
+                                        " är registrerat.\n");
+                            }
+                            break;
+                        }
                     }
-                }
+                } break;
             }
         }
+
+//        while (true) {
+//            System.out.print("Ange namn (förnamn efternamn)" +
+//                    " eller personnummer (10 siffror) för att söka efter medlem.\nSkriv exit för att avsluta. ");
+//            while(true) {
+//                memberInputData = input.nextLine();
+//                if(memberInputData.equalsIgnoreCase("exit"))
+//                    System.exit(1);
+//                ml.searchMemberbyNameOrPersonalIdNumber(memberInputData);
+////                if(!memberSearchFound) {
+////                    System.out.println("Hittades ej. \n");
+////                    break;
+////                } else {
+////                    System.out.print("Registrera besök för aktuell medlem? (Ja/Nej) ");
+////                    memberInputRegister = input.nextLine();
+////                    if(memberInputRegister.equalsIgnoreCase("ja")) {
+////                        mv.addMemberVisit(ml.getFoundMember());
+////                    } else {
+////                        break;
+////                    }
+////                }
+//            }
+//        }
     }
 }

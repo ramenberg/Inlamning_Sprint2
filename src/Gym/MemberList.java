@@ -8,21 +8,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MemberList {
+
+    // List<Member>
     protected List<Member> memberList = new ArrayList<>();
-    protected int memberFoundIndex = 0;
 
-    public int getMemberFoundIndex() {
-        return memberFoundIndex;
-    }
-    public void setMemberFoundIndex(int memberFoundIndex) {
-        this.memberFoundIndex = memberFoundIndex;
+    public List<Member> getMemberList() {
+        return memberList;
     }
 
-    protected void addMember(Member member) {
-        memberList.add(member);
-    }
-
-    public List<Member> createMemberList() {
+    protected List<Member> createMemberList() {
         String firstRow;
         String[] splitter;
         String name, pNr;
@@ -45,27 +39,37 @@ public class MemberList {
         return memberList;
     }
 
+    // Getters & Setters
+
+    // Methods
+    protected void addMember(Member member) {
+        memberList.add(member);
+    }
+
     public boolean validateMembership(LocalDate paymentDate) {
         boolean membershipValid;
         membershipValid = paymentDate.isAfter(Date.getCurrentDateMinusOneYear());
         return membershipValid;
     }
 
-    public Member getMemberInList(int i) {
-        return memberList.get(i);
+    // Member & Search member
+    protected Member foundMember;
+    public Member getFoundMember() {
+        return foundMember;
+    }
+    public void setFoundMember(Member foundMember) {
+        this.foundMember = foundMember;
     }
 
     public boolean searchMemberbyNameOrPersonalIdNumber(String input) {
-        while (!memberList.isEmpty()) {
-            for (Member member : memberList)
-                if (member.getName().equalsIgnoreCase(input) || (member.getPersonalIdNumber().equals(input))) {
-                    System.out.println("Information om \"" + input + "\":");
-                    member.toString();
-                    setMemberFoundIndex(memberList.indexOf(member));
-                    return true;
-                }
-        } System.out.println("Personen hittades ej i medlemsregistret. Du skrev: " + input);
-        return false;
+        List<Member> list = memberList;
+        for (Member member : list)
+            if (member.getName().equalsIgnoreCase(input) || (member.getPersonalIdNumber().equals(input))) {
+                System.out.println("Information om \"" + input + "\":");
+                setFoundMember(member);
+                System.out.println(member);
+                return true;
+            } return false;
     }
 }
 

@@ -1,4 +1,4 @@
-package Gym;
+package Gym.OldFiles;
 
 import java.util.List;
 

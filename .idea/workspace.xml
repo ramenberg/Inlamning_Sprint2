@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="new File">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/MemberVisits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gym/MemberVisitsInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/FilePathTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/MemberVisitsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/Gym/memberVisitsTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/DateCompareTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/Gym/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/FilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/FilePath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/MemberListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/MemberListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/ReadDateTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/SearchMemberTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/customers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/customersTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/CreateMemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/CreateMemberList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/DateCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/DateCompare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MainProg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MainProg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MemberList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/memberVisitDates.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/memberVisits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/memberVisits_OLD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/MemberVisits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MemberVisits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/ReadDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/ReadDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/SearchMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/SearchMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/memberVisits_OLD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/memberVisits_OLD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -55,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "Gym.MemberList",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   }
@@ -65,7 +70,11 @@
       <recent name="Gym" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="Gym.MemberList" />
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\geleh\IdeaProjects\Inlamning_Sprint2\src\Gym\OldFiles" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Gym" />
@@ -87,7 +96,8 @@
       <workItem from="1665758410147" duration="1349000" />
       <workItem from="1665916304253" duration="15089000" />
       <workItem from="1665997106414" duration="12798000" />
-      <workItem from="1666119207300" duration="8666000" />
+      <workItem from="1666119207300" duration="8679000" />
+      <workItem from="1666169234177" duration="6854000" />
     </task>
     <task id="LOCAL−00001" summary="New pathfile">
       <created>1665751458407</created>
@@ -143,7 +153,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1666017167897</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="new File">
+      <created>1666127967508</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1666127967508</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
