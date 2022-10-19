@@ -65,7 +65,7 @@ public class MemberList {
         List<Member> list = memberList;
         for (Member member : list)
             if (member.getName().equalsIgnoreCase(input) || (member.getPersonalIdNumber().equals(input))) {
-                System.out.println("Information om \"" + input + "\":");
+                System.out.println("\nInformation om \"" + input + "\":");
                 setFoundMember(member);
                 System.out.println(member);
                 return true;

@@ -32,16 +32,19 @@ public class Member implements MemberVisitsInterface {
         return "Namn: " + getName() +
                 "\nPersonnummer: " + getPersonalIdNumber() +
                 "\nSenaste betalningsdag: " + getLastPaymentDate() +
-                "\nAktiv medlem: " + getActiveMember() +"\n";
+                "\nAktiv medlem: " + booleanToString(getActiveMember())+"\n";
     }
     @Override
     public String toStringVisits() {
         return getName() + ", " + getPersonalIdNumber() +
-                "\n" + getLastVisitDate();
+                "\nBesöksdatum: " + getLastVisitDate();
     }
 
     public Boolean getActiveMember() {
         return activeMember;
+    }
+    public String booleanToString(boolean b) {
+        return b ? "Ja" : "Nej";
     }
     public void setActiveMember(Boolean activeMember) {
         this.activeMember = activeMember;

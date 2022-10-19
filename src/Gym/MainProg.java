@@ -36,7 +36,7 @@ public class MainProg {
                 else {
                     boolean memberFound = ml.searchMemberbyNameOrPersonalIdNumber(memberInputData);
                     if(!memberFound) {
-                        System.out.println("Personen hittades ej i registret.");
+                        System.out.println("\nPersonen hittades ej i registret. Försök igen.\n");
                         break;
                     } else {
                         Member found = ml.getFoundMember();

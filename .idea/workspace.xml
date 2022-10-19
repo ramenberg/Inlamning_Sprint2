@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="new File">
-      <change afterPath="$PROJECT_DIR$/Test/Gym/FilePathTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Gym/MemberVisitsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/Gym/memberVisitsTest.txt" afterDir="false" />
+    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="Program update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/DateCompareTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/DateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/DateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/MemberListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/MemberListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/ReadDateTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/SearchMemberTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Gym/customers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/customersTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/CreateMemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/CreateMemberList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/DateCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/DateCompare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MainProg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MainProg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gym/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MemberList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/MemberVisits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MemberVisits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/ReadDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/ReadDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/SearchMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/SearchMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/memberVisits_OLD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/OldFiles/memberVisits_OLD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +83,7 @@
       <workItem from="1665916304253" duration="15089000" />
       <workItem from="1665997106414" duration="12798000" />
       <workItem from="1666119207300" duration="8679000" />
-      <workItem from="1666169234177" duration="6854000" />
+      <workItem from="1666169234177" duration="9631000" />
     </task>
     <task id="LOCAL−00001" summary="New pathfile">
       <created>1665751458407</created>
@@ -159,7 +145,13 @@
       <option name="presentableId" value="LOCAL−00010" />
       <updated>1666127967508</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL−00011" summary="Program update">
+      <created>1666176170170</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1666176170170</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +172,7 @@
     <MESSAGE value="New pathfile" />
     <MESSAGE value="New tests" />
     <MESSAGE value="new File" />
-    <option name="LAST_COMMIT_MESSAGE" value="new File" />
+    <MESSAGE value="Program update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Program update" />
   </component>
 </project>
