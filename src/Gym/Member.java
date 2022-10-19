@@ -9,24 +9,19 @@ public class Member implements MemberVisitsInterface {
     protected String name;
     protected LocalDate lastPaymentDate;
 
-
     protected Boolean activeMember;
 
     protected LocalDate lastVisitDate;
 
 
+    // Member constructors
     public Member(String personalIdNumber, String name, LocalDate lastPaymentDate, Boolean activeMember) {
         this.personalIdNumber = personalIdNumber;
         this.name = name;
         this.lastPaymentDate = lastPaymentDate;
         this.activeMember = activeMember;
     }
-    public Member(String personalIdNumber, String name, LocalDate lastVisitDate) {
-        this.personalIdNumber = personalIdNumber;
-        this.name = name;
-        this.lastVisitDate = lastVisitDate;
-    }
-
+    // Overrides
     @Override
     public String toString() {
         return "Namn: " + getName() +
@@ -36,43 +31,29 @@ public class Member implements MemberVisitsInterface {
     }
     @Override
     public String toStringVisits() {
-        return getName() + ", " + getPersonalIdNumber() +
-                "\nBesöksdatum: " + getLastVisitDate();
-    }
-
-    public Boolean getActiveMember() {
-        return activeMember;
+        return getLastVisitDate() + " " + getName() + ", " + getPersonalIdNumber() + "\n";
     }
     public String booleanToString(boolean b) {
-        return b ? "Ja" : "Nej";
-    }
-    public void setActiveMember(Boolean activeMember) {
-        this.activeMember = activeMember;
+        return b ? "ja" : "nej";
+    } // true/false till ja/nej
+
+    // getters & setters
+    public Boolean getActiveMember() {
+        return activeMember;
     }
 
     public String getPersonalIdNumber() {
         return personalIdNumber;
     }
 
-    public void setPersonalIdNumber(String personalIdNumber) {
-        this.personalIdNumber = personalIdNumber;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public LocalDate getLastPaymentDate() {
         return lastPaymentDate;
     }
 
-    public void setLastPaymentDate(LocalDate lastPaymentDate) {
-        this.lastPaymentDate = lastPaymentDate;
-    }
     public List<LocalDate> getLastVisitDate() {
         return Collections.singletonList(lastVisitDate);
     }

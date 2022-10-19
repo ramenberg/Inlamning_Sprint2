@@ -17,10 +17,4 @@ public class MemberVisits extends MemberList {
             throw new RuntimeException(e);
         }
     }
-//    protected void showAllMemberVisitsList() {
-//        for (Member member : memberVisitList) {
-//            System.out.println(member.getName() + ", " + member.getPersonalIdNumber() +
-//                    ", senaste betalningsdag: " + member.getLastPaymentDate());
-//        }
-//    }
 }

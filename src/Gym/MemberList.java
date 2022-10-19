@@ -9,7 +9,7 @@ import java.util.List;
 
 public class MemberList {
 
-    // List<Member>
+    // Creation of list of <Member>
     protected List<Member> listOfMembersFromFile = new ArrayList<>();
 
     public List<Member> getCreatedMemberList() {
@@ -31,7 +31,7 @@ public class MemberList {
                 paymentDate = LocalDate.parse(buf.readLine().trim(), Date.formatter);
                 membershipValidation = validateMembership(paymentDate);
                 Member mem = new Member(personalIdNumber, name, paymentDate, membershipValidation);
-                addMember(mem);
+                addMemberToList(mem);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -39,17 +39,14 @@ public class MemberList {
         return listOfMembersFromFile;
     }
 
-    // Getters & Setters
+    // Methods used in creation of member list.
 
-    // Methods
-    protected void addMember(Member member) {
+    protected void addMemberToList(Member member) {
         listOfMembersFromFile.add(member);
     }
 
     public boolean validateMembership(LocalDate paymentDate) {
-        boolean membershipValid;
-        membershipValid = paymentDate.isAfter(Date.getCurrentDateMinusOneYear());
-        return membershipValid;
+        return paymentDate.isAfter(Date.getCurrentDateMinusOneYear());
     }
 
     // Member & Search member
