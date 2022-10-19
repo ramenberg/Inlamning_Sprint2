@@ -1,0 +1,18 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>### IntelliJ IDEA ###\r\nout/\r\n!**/src/main/**/out/\r\n!**/src/test/**/out/\r\n\r\n### Eclipse ###\r\n.apt_generated\r\n.classpath\r\n.factorypath\r\n.project\r\n.settings\r\n.springBeans\r\n.sts4-cache\r\nbin/\r\n!**/src/main/**/bin/\r\n!**/src/test/**/bin/\r\n\r\n### NetBeans ###\r\n/nbproject/private/\r\n/nbbuild/\r\n/dist/\r\n/nbdist/\r\n/.nb-gradle/\r\n\r\n### VS Code ###\r\n.vscode/\r\n\r\n### Mac OS ###\r\n.DS_Store
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision ce4be43adaa831359dd990d45e5d045042246020)
++++ b/.gitignore	(date 1666194896492)
+@@ -26,4 +26,5 @@
+ .vscode/
+ 
+ ### Mac OS ###
+-.DS_Store
+\ No newline at end of file
++.DS_Store
++/src/Gym/OldFiles/
