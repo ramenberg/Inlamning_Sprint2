@@ -9,7 +9,7 @@ import java.util.List;
 
 public class MemberList {
 
-    // List<Member>
+    // Creation of list of <Member>
     protected List<Member> listOfMembersFromFile = new ArrayList<>();
 
     public List<Member> getCreatedMemberList() {
@@ -39,9 +39,8 @@ public class MemberList {
         return listOfMembersFromFile;
     }
 
-    // Getters & Setters
+    // Methods used in creation of member list.
 
-    // Methods
     protected void addMember(Member member) {
         listOfMembersFromFile.add(member);
     }
