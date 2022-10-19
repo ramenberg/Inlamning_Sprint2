@@ -17,7 +17,7 @@ public class MemberListTest {
     @Test
     public void createMemberListTest() {
 
-        List<Member> testlist = ml.createMemberList();
+        List<Member> testlist = ml.createMemberListReadFromFile();
         //assert
         assertEquals(testlist.size(), 14);
         Member p1 = testlist.get(0);

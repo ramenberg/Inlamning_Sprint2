@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="Program update">
+    <list default="true" id="aa81e602-2824-4c65-b43b-f2553c1640a9" name="Changes" comment="Working version 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Gym/MemberListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Gym/MemberListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MainProg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MainProg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gym/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/Member.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gym/MemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gym/MemberList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +30,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2G7qf1OA0Ro5lWyxUzGxW3S4fN5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,8 +53,11 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "Gym.MemberList",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -83,7 +92,7 @@
       <workItem from="1665916304253" duration="15089000" />
       <workItem from="1665997106414" duration="12798000" />
       <workItem from="1666119207300" duration="8679000" />
-      <workItem from="1666169234177" duration="9631000" />
+      <workItem from="1666169234177" duration="10871000" />
     </task>
     <task id="LOCAL−00001" summary="New pathfile">
       <created>1665751458407</created>
@@ -151,7 +160,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1666176170170</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="Working version 1">
+      <created>1666185776609</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1666185776609</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +188,7 @@
     <MESSAGE value="New tests" />
     <MESSAGE value="new File" />
     <MESSAGE value="Program update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program update" />
+    <MESSAGE value="Working version 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working version 1" />
   </component>
 </project>

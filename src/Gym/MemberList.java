@@ -10,40 +10,40 @@ import java.util.List;
 public class MemberList {
 
     // List<Member>
-    protected List<Member> memberList = new ArrayList<>();
+    protected List<Member> listOfMembersFromFile = new ArrayList<>();
 
-    public List<Member> getMemberList() {
-        return memberList;
+    public List<Member> getCreatedMemberList() {
+        return listOfMembersFromFile;
     }
 
-    protected List<Member> createMemberList() {
-        String firstRow;
-        String[] splitter;
-        String name, pNr;
+    protected List<Member> createMemberListReadFromFile() {
+        String firstRowInFile;
+        String[] firstRowInFileSplitter;
+        String name, personalIdNumber;
         LocalDate paymentDate;
         boolean membershipValidation;
 
         try (BufferedReader buf = Files.newBufferedReader(FilePath.filePath)) {
-            while ((firstRow = buf.readLine()) != null) {
-                splitter = firstRow.split(",");
-                pNr = (splitter[0].trim());
-                name = (splitter[1].trim());
+            while ((firstRowInFile = buf.readLine()) != null) {
+                firstRowInFileSplitter = firstRowInFile.split(",");
+                personalIdNumber = (firstRowInFileSplitter[0].trim());
+                name = (firstRowInFileSplitter[1].trim());
                 paymentDate = LocalDate.parse(buf.readLine().trim(), Date.formatter);
                 membershipValidation = validateMembership(paymentDate);
-                Member mem = new Member(pNr, name, paymentDate, membershipValidation);
+                Member mem = new Member(personalIdNumber, name, paymentDate, membershipValidation);
                 addMember(mem);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        return memberList;
+        return listOfMembersFromFile;
     }
 
     // Getters & Setters
 
     // Methods
     protected void addMember(Member member) {
-        memberList.add(member);
+        listOfMembersFromFile.add(member);
     }
 
     public boolean validateMembership(LocalDate paymentDate) {
@@ -53,20 +53,20 @@ public class MemberList {
     }
 
     // Member & Search member
-    protected Member foundMember;
-    public Member getFoundMember() {
-        return foundMember;
+    protected Member foundMemberInSearch;
+    public Member getFoundMemberInSearch() {
+        return foundMemberInSearch;
     }
-    public void setFoundMember(Member foundMember) {
-        this.foundMember = foundMember;
+    public void setFoundMemberInSearch(Member foundMemberInSearch) {
+        this.foundMemberInSearch = foundMemberInSearch;
     }
 
-    public boolean searchMemberbyNameOrPersonalIdNumber(String input) {
-        List<Member> list = memberList;
+    public boolean searchMemberByNameOrPersonalIdNumber(String input) {
+        List<Member> list = getCreatedMemberList();
         for (Member member : list)
             if (member.getName().equalsIgnoreCase(input) || (member.getPersonalIdNumber().equals(input))) {
                 System.out.println("\nInformation om \"" + input + "\":");
-                setFoundMember(member);
+                setFoundMemberInSearch(member);
                 System.out.println(member);
                 return true;
             } return false;
