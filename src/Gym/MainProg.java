@@ -24,7 +24,6 @@ public class MainProg {
                     boolean memberFound = ml.searchMemberByNameOrPersonalIdNumber(inputFromScanner);
                     if(!memberFound) {
                         System.out.println("\nPersonen hittades ej i registret. Försök igen.\n");
-                        break;
                     } else {
                         Member found = ml.getFoundMemberInSearch();
                         if (found.getActiveMember()) {
@@ -38,7 +37,6 @@ public class MainProg {
                             }
                             else {
                                 System.out.println("Inget besök registrerades.\n");
-                                break;
                             }
                             break;
                         }
